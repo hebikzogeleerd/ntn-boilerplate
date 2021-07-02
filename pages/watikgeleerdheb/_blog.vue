@@ -23,9 +23,9 @@ export default {
   async asyncData({ $content, params, error }) {
     let post;
     try {
-      post = await $content("blog", params.blog).fetch();
+      post = await $content("hebikzogeleerd", params.blog).fetch();
     } catch (e) {
-      error({ message: "Blog post not found" });
+      error({ message: "Er is niets gevonden" });
     }
     return { post };
   },
