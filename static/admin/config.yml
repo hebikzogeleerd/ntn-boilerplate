@@ -41,7 +41,7 @@ collections:
           # - { label: Site Email, name: siteemail, widget: string, required: false }
   - name: 'watikgeleerdheb'
     label: 'watikgeleerdheb'
-    folder: 'content/blog'
+    folder: 'content/watikgeleerdheb'
     create: true
     format: 'frontmatter'
     slug: '{{fields.createdAt}}-{{slug}}'
@@ -54,12 +54,12 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
   - name: 'voorbeelden'
     label: 'voorbeelden'
-    label_singular: 'Project'
-    folder: 'content/projects'
+    label_singular: 'Voorbeeld'
+    folder: 'content/voorbeelden'
     create: true
     format: 'frontmatter'
     slug: '{{slug}}'
-    preview_path: 'projects/{{slug}}'
+    preview_path: 'voorbeelden/{{slug}}'
     fields:
       - {
           label: 'Project Category',
